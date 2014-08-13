@@ -84,7 +84,7 @@ fullscreen = 1
 # (list) python-for-android whitelist
 #android.p4a_whitelist =
 
-# (str) python-for-android repository url (clonable)
+# (str) python-for-android repository url
 #android.p4a_repo_url = git://github.com/kivy/python-for-android
 
 # (str) python-for-android repository branch

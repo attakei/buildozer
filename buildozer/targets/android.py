@@ -364,11 +364,12 @@ class TargetAndroid(Target):
             system_p4a_dir = self.buildozer.config.getdefault('app', 'android.p4a_dir')
             system_p4a_repo_url = self.buildozer.config.getdefault(
                 'app', 'android.p4a_repo_url', 'git://github.com/kivy/python-for-android')
+            system_p4a_repo_branch = self.buildozer.config.getdefault('app', 'android.p4a_repo_branch', 'master')
             if system_p4a_dir:
                 cmd('ln -sf {} ./python-for-android'.format(system_p4a_dir),
                     cwd = self.buildozer.platform_dir)
             else:
-                cmd('git clone {}'.format(system_p4a_repo_url),
+                cmd('git clone -b {} {}'.format(system_p4a_repo_branch, system_p4a_repo_url),
                     cwd=self.buildozer.platform_dir)
         elif self.platform_update:
             cmd('git clean -dxf', cwd=pa_dir)

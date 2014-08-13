@@ -87,6 +87,9 @@ fullscreen = 1
 # (str) python-for-android repository url (clonable)
 #android.p4a_repo_url = git://github.com/kivy/python-for-android
 
+# (str) python-for-android repository branch
+#android.p4a_repo_branch = master
+
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.renpy.android.PythonActivity
 

@@ -519,6 +519,9 @@ class Buildozer(object):
         if 'PYTHONHOME' in self.env_venv:
             del self.env_venv['PYTHONHOME']
 
+        if True or self.targetname == 'ios':
+            self.cmd('pip install Cython', env=self.env_venv)
+
         # ensure any sort of compilation will fail
         self.env_venv['CC'] = '/bin/false'
         self.env_venv['CXX'] = '/bin/false'

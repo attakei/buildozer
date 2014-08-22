@@ -97,6 +97,10 @@ fullscreen = 1
 # directory containing the files)
 #android.add_src =
 
+# (str) user forked python-for-android url.
+# If you have customized python-for-android, set repository url(yet not working)
+#android.repos_url = git://github.com/kivy/python-for-android
+
 # (str) python-for-android branch to use, if not master, useful to try
 # not yet merged features.
 #android.branch = master

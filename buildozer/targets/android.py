@@ -325,7 +325,6 @@ class TargetAndroid(Target):
         versions = []
         for v in os.listdir(join(*args)):
             try:
-                print(os.listdir(join(*args)))
                 versions.append(self._process_version_string(v))
             except:
                 pass
